@@ -1,1 +1,1 @@
-# ofuzkal-Nesne_Yonelimli_Programlama_Java
+Nesne_Yonelimli_Programlama_Java
