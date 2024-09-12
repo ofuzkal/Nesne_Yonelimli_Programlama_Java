@@ -1,58 +1,54 @@
 
 public class Kutu {
 	
-	private static float varsayilan = 1;
 	private float genislik;
 	private float yukseklik;
 	private float derinlik;
 	
 	public Kutu(float genislik, float yukseklik, float derinlik) {
-		this.genislik = genislik;
-		this.yukseklik = yukseklik;
-		this.derinlik = derinlik;
+		setGenislik(genislik);
+		setYukseklik(yukseklik);
+		setDerinlik(derinlik);
 	}
 	
 	public float hacimHesapla() {
-		return this.genislik * this.yukseklik * this.derinlik;
+		float hacim = this.genislik * this.yukseklik * this.derinlik;
+		return hacim;
 	}
-	
+
 	public float getGenislik() {
-		return this.genislik;
+		return genislik;
 	}
-	
-	public float getYukseklik() {
-		return this.yukseklik;
-	}
-	
-	public float getDerinlik() {
-		return this.derinlik;
-	}
-	
+
 	public void setGenislik(float genislik) {
-		if(genislik > 0) {
+		if(genislik > 0)
 			this.genislik = genislik;
-		}
-		else {
-			this.genislik = varsayilan;
-		}
+		else
+			this.genislik = 1;
 	}
-	
+
+	public float getYukseklik() {
+		return yukseklik;
+	}
+
 	public void setYukseklik(float yukseklik) {
-		if(yukseklik > 0) {
+		if(yukseklik > 0)
 			this.yukseklik = yukseklik;
-		}
-		else {
-			this.yukseklik = varsayilan;
-		}
+		else
+			this.yukseklik = 1;
+	}
+
+	public float getDerinlik() {
+		return derinlik;
+	}
+
+	public void setDerinlik(float derinlik) {
+		if(derinlik > 0)
+			this.derinlik = derinlik;
+		else
+			this.derinlik = 1;
 	}
 	
-	public void setDerinlik(float derinlik) {
-		if(derinlik > 0) {
-			this.derinlik = derinlik;
-		}
-		else {
-			this.derinlik = varsayilan;
-		}
-	}
+	
 
 }
