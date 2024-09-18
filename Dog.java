@@ -1,18 +1,12 @@
 
 public class Dog extends Animal {
-	
-	public Dog() {
-		noise = "Hav hav";
+
+	public void makeNoise() {
+		System.out.println("Hav hav");
 	}
 	
-	public void doYourThing() {
-		identifySelf();
-		System.out.println(noise);
-	}
-	
-	public void identifySelf() {
-		super.identifySelf();
-		System.out.println("Ben bir köpeğim.");
+	public void bark() {
+		System.out.println("HAV HAV HAV");
 	}
 	
 }
